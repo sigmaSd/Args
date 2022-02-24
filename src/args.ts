@@ -9,7 +9,7 @@ If you think that this library doesn't support some feature, it's probably inten
 - Non UTF-8 arguments are supported.
 */
 
-export default class Arguments {
+export class Arguments {
   private args: string[];
 
   /** Creates a parser from [`Deno.args`].
