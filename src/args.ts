@@ -1,8 +1,8 @@
 export default class Arguments {
   private args: string[];
 
-  static fromEnv() {
-    return new Arguments(Deno.args);
+  static fromEnv(): Arguments {
+    return new Arguments([...Deno.args]);
   }
   constructor(args: string[]) {
     this.args = args;
